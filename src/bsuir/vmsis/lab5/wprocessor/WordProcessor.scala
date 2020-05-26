@@ -3,7 +3,7 @@ package bsuir.vmsis.lab5.wprocessor
 import scala.annotation.tailrec
 
 object WordProcessor {
-    def reverseString(string: String): String = {
+    def invertString(string: String): String = {
       var mutableString= new StringBuilder(string)
       def recursion(index: Int): StringBuilder ={
         if(mutableString.size>index)
@@ -14,7 +14,7 @@ object WordProcessor {
       recursion(0).toString()
     }
     
-    def reverseStringWithTailRecursion(string: String): String = {
+    def invertStringWithTailRecursion(string: String): String = {
       var mutableString= new StringBuilder(string)
       @tailrec
       def tailRecursion(beginIndex: Int, endIndex: Int){
